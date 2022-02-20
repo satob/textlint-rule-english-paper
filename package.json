@@ -1,0 +1,28 @@
+{
+  "version": "1.0.0",
+  "keywords": [
+    "textlintrule"
+  ],
+  "main": "lib/index.js",
+  "files": [
+    "lib/",
+    "src/"
+  ],
+  "scripts": {
+    "test": "textlint-scripts test",
+    "build": "textlint-scripts build",
+    "prepublish": "npm run --if-present build"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "textlint-scripts": "^12.0.2",
+    "textlint-tester": "^12.0.2"
+  },
+  "name": "textlint-rule-english-paper",
+  "description": "This textlint rule found representations not suitable for English papers.",
+  "directories": {
+    "test": "test"
+  },
+  "author": "SATO Yusuke",
+  "license": "ISC"
+}
