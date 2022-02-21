@@ -2,6 +2,13 @@
 
 This textlint rule found representations not suitable for English papers.
 
+日本人が英語論文を書く際にしがちな誤りを見つけるためのルールです。
+
+参考にしたページ：
+- https://www.sci.hokudai.ac.jp/~minobe/class/bad_eng_expressions.html
+- http://neutron.appl-beam.ibaraki.ac.jp/ohoyamak/Because.html
+- https://www.u-english.co.jp/reading/17.html
+
 ## Install
 
 Install with [npm](https://www.npmjs.com/):
