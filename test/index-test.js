@@ -46,10 +46,20 @@ tester.run("rule", rule, {
             ]
         },
         {
+            text: "Generally the size of problem is restrected with N.",
+            errors: [
+                {
+                    message: "'Generally' at the beginning of a sentence should be replaced with 'In general,'.",
+                    line: 1,
+                    column: 1
+                }
+            ]
+        },
+        {
             text: "Especially it was hot yesterday.",
             errors: [
                 {
-                    message: "The word 'Especially' would be better to use in the middle of a sentence.",
+                    message: "The word 'Especially' should be move to the middle of a sentence or replaced with 'In particular,'.",
                     line: 1,
                     column: 1
                 }
@@ -59,7 +69,38 @@ tester.run("rule", rule, {
             text: "Particularly it was hot yesterday.",
             errors: [
                 {
-                    message: "The word 'Particularly' would be better to use in the middle of a sentence.",
+                    message: "The word 'Particularly' should be move to the middle of a sentence or replaced with 'In particular,'.",
+                    line: 1,
+                    column: 1
+                }
+            ]
+        },
+        {
+            text: "Firstly we have changed preconditions.",
+            errors: [
+                {
+                    message: "The word 'firstly' would be better to replaced with 'first'.",
+                    line: 1,
+                    column: 1
+                }
+            ]
+        },
+        {
+            text: `It is thought
+             that the effectiveness affects to the project budget.`,
+            errors: [
+                {
+                    message: "The sentence 'It is thought that' would not be better to use in a formal paper.",
+                    line: 1,
+                    column: 1
+                }
+            ]
+        },
+        {
+            text: `It is assumed that the effectiveness affects to the project budget.`,
+            errors: [
+                {
+                    message: "The sentence 'It is assumed that' would not be better to use in a formal paper.",
                     line: 1,
                     column: 1
                 }
